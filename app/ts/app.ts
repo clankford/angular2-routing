@@ -27,3 +27,5 @@ import { RouteConfig } from 'angular2/router';
     { path: '/contact', name: 'Contact', component: ContactComponent },
     { path: '/contactus', name: 'ContactUs', redirectTo: ['/Contact'] },
 ])
+class RouterApp {
+}
