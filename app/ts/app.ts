@@ -1,6 +1,11 @@
-import { Component } from 'angular2/core'
-import { ROUTER_DIRECTIVES } from 'angular2/router';
-import { RouteConfig } from 'angular2/router';
+import { provide, Component } from 'angular2/core'
+import { bootstrap } from 'angular2/platform/browser'
+import { ROUTER_DIRECTIVES, 
+         ROUTER_PROVIDERS,
+         LocationStrategy,
+         HashLocationStrategy,
+         RouteConfig
+} from 'angular2/router';
 
 @Component({
     selector: 'router-app',
@@ -29,3 +34,8 @@ import { RouteConfig } from 'angular2/router';
 ])
 class RouterApp {
 }
+
+bootstrap(RouterApp, [
+    ROUTER_PROVIDERS,
+    provide(LocationStrategy, {useClass: HashLocationStrategy})
+]);

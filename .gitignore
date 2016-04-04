@@ -1,1 +1,5 @@
 node_modules
+app.js
+AboutComponent.js
+ContactComponent.js
+HomeComponent.js
