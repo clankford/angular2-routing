@@ -1,11 +1,12 @@
-import { provide, Component } from 'angular2/core'
-import { bootstrap } from 'angular2/platform/browser'
-import { ROUTER_DIRECTIVES, 
+import { provide, Component } from 'angular2/core';
+import { bootstrap } from 'angular2/platform/browser';
+import { ROUTER_DIRECTIVES,
          ROUTER_PROVIDERS,
          LocationStrategy,
          HashLocationStrategy,
          RouteConfig
 } from 'angular2/router';
+import { HomeComponent } from './components/HomeComponent';
 
 @Component({
     selector: 'router-app',
