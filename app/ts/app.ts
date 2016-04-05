@@ -8,6 +8,7 @@ import { ROUTER_DIRECTIVES,
 } from 'angular2/router';
 import { HomeComponent } from './components/HomeComponent';
 import { ContactComponent } from './components/ContactComponent';
+import { AboutComponent } from './components/AboutComponent';
 
 @Component({
     selector: 'router-app',
