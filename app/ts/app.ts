@@ -24,8 +24,8 @@ import { AUTH_PROVIDERS } from './services/AuthService';
             <ul>
                 <li><a [routerLink]="['/Home']">Home</a></li>
                 <li><a [routerLink]="['/About']">About</a></li>
-                <li><a [routerLink]="['/Contact']>Contact</a></li>
-                <li><a [routerLink]="['/Protected']>Protected</a></li>
+                <li><a [routerLink]="['/Contact']">Contact</a></li>
+                <li><a [routerLink]="['/Protected']">Protected</a></li>
             </ul>
         </nav>
         
