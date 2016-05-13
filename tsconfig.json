@@ -25,6 +25,7 @@
         "./app/ts/components/LoginComponent.ts",
         "./app/ts/components/ProtectedComponent.ts",
         "./app/ts/components/ProductsComponent.ts",
+        "./app/ts/components/products/ByIdComponent.ts",
         "./app/ts/services/AuthService.ts",
         "./typings/moment/moment-node.d.ts",
         "./typings/moment/moment.d.ts",
