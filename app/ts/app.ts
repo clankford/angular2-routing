@@ -27,6 +27,7 @@ import { AUTH_PROVIDERS } from './services/AuthService';
                 <li><a [routerLink]="['/About']">About</a></li>
                 <li><a [routerLink]="['/Contact']">Contact</a></li>
                 <li><a [routerLink]="['/Protected']">Protected</a></li>
+                <li><a [routerLink]="['/Products']">Products</a></li>
             </ul>
         </nav>
         
@@ -40,7 +41,8 @@ import { AUTH_PROVIDERS } from './services/AuthService';
 })
 @RouteConfig([
     { path: '/', name: 'root', redirectTo: ['/Home'] },
-    { path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true },
+    { path: '/home', name: 'Home', component: HomeComponent,
+        useAsDefault: true },
     { path: '/about', name: 'About', component: AboutComponent },
     { path: '/products/...', name: 'Products', component: ProductsComponent },
     { path: '/contact', name: 'Contact', component: ContactComponent },

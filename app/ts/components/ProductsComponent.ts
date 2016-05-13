@@ -6,8 +6,8 @@ import {
     RouterLink
 } from 'angular2/router';
 import {MainComponent} from './products/MainComponent';
-import {InterestComponent} from '.products/InterestComponent';
-import {SpotifyComponent} from '.products/SpotifyComponent';
+import {InterestComponent} from './products/InterestComponent';
+import {SpotifyComponent} from './products/SpotifyComponent';
 import {ByIdComponent} from './products/ByIdComponent';
 
 @Component({
@@ -19,7 +19,7 @@ import {ByIdComponent} from './products/ByIdComponent';
     <div class="navLinks">
         <a [routerLink]="['./Main']">Main</a> |
         <a [routerLink]="['./Interest']">Interest</a> |
-        <a [routerLink]="['./Sportify']">Sportify</a> |
+        <a [routerLink]="['./Spotify']">Spotify</a> |
         Enter id: <input #id size="6">
         <button (click)="goToProduct(id.value)">Go</button>
     </div>
@@ -30,7 +30,8 @@ import {ByIdComponent} from './products/ByIdComponent';
     `
 })
 @RouteConfig([
-    { path: '/main', name: 'Main', component: MainComponent, useAsDefault: true },
+    { path: '/main', name: 'Main', component: MainComponent,
+        useAsDefault: true },
     { path: '/:id', name: 'ById', component: ByIdComponent },
     {path: '/interest', name: 'Interest', component: InterestComponent },
     {path: '/spotify', name: 'Spotify', component: SpotifyComponent },
@@ -38,7 +39,7 @@ import {ByIdComponent} from './products/ByIdComponent';
 export class ProductsComponent {
     constructor(public router: Router) {
     }
-    
+
     goToProduct(id: string): void {
         this.router.navigate(['./ById', {id: id}]);
     }
