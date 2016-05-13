@@ -16,5 +16,4 @@ import { AuthService } from '../services/AuthService';
     }
 )
 export class ProtectedComponent {
-    
 }
