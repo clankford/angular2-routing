@@ -12,6 +12,7 @@ import { ContactComponent } from './components/ContactComponent';
 import { AboutComponent } from './components/AboutComponent';
 import { LoginComponent } from './components/LoginComponent';
 import { ProtectedComponent } from './components/ProtectedComponent';
+import { ProductsComponent } from './components/ProductsComponent';
 import { AUTH_PROVIDERS } from './services/AuthService';
 
 @Component({
@@ -39,8 +40,9 @@ import { AUTH_PROVIDERS } from './services/AuthService';
 })
 @RouteConfig([
     { path: '/', name: 'root', redirectTo: ['/Home'] },
-    { path: '/home', name: 'Home', component: HomeComponent },
+    { path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true },
     { path: '/about', name: 'About', component: AboutComponent },
+    { path: '/products/...', name: 'Products', component: ProductsComponent },
     { path: '/contact', name: 'Contact', component: ContactComponent },
     { path: '/contactus', name: 'ContactUs', redirectTo: ['/Contact'] },
     { path: '/protected', name: 'Protected', component: ProtectedComponent },
