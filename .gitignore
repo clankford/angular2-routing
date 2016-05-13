@@ -3,3 +3,5 @@ app.js
 AboutComponent.js
 ContactComponent.js
 HomeComponent.js
+.DS_STORE
+npm-debug.log
